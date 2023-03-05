@@ -1,0 +1,24 @@
+*{ 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+input{ 
+    height: 3rem;
+    width: 90%;
+    border: 2px solid rebeccapurple;
+    margin: 30px auto ;
+    outline: 1px;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+button{ 
+    height: 100PX;
+    width: 20%;
+    background-color: rebeccapurple;
+    color: #fff;
+    font-size: 40PX;
+    border-radius: 11px;
+}

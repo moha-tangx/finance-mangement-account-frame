@@ -1,0 +1,117 @@
+*{ 
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{ 
+    --primary:rgb(102, 51, 153);
+    --light:white;
+    --dark:rgb(100, 100, 100);
+}
+body{ 
+    background-color:var(--primary);
+}
+
+.card{ 
+    position: relative;
+    margin: 15vh auto;
+    width: 75%;
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: 10 10 20 20;
+    background-color: var(--light);
+}
+
+.profile-img{ 
+    position: absolute;
+    margin: 4vh 4vh;
+    height: 20vh;
+    width: 20vh;
+    background-color:var(--primary);
+    border-radius: 100%;
+    box-shadow:var(--dark) 2px 2px 5px 2px;
+}
+
+.username{
+    position: absolute;
+    margin: 25vh 5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    color: var(--primary);
+    font-size: 25px;}
+
+    .fullname{ 
+        position: absolute;
+        color: var(--primary);
+        margin: 30vh 5vh;
+}
+
+.level{ 
+    position: absolute;
+    right: 4vw;
+    top: 4vh;
+    color: var(--primary);
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+
+.qr-code{
+   position: absolute;
+   top: 25%;
+   left: 35%;
+   width: 20vw;
+   height: 25vh;
+   border: 2px solid var(--primary);
+   border-top-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+.qr-code>img{ 
+    margin:10% 35% 0 35%;
+}
+.qr-code>span{ 
+    margin-left: 40%;
+    color:  var(--primary);
+}
+
+button{
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background-color: transparent;
+    font-weight: bold;
+    height: 5vh;
+    width: 10%;
+    margin: 60vh 45% 0 45% ;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width:700px) {
+   .profile-img{ 
+    position: relative;
+    margin: 2vh auto;
+   }
+   .card{ 
+    padding-top: 1vh;
+   }
+
+   .qr-code{ 
+    left: 20vw;
+    top: 40vh;
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+   }
+
+
+   .username,.fullname{ 
+    position: relative;
+    margin: 0 25vw;
+   }
+
+   .qr-code>img{ 
+    margin: 1vh 0 0 10vw;
+   }
+}
